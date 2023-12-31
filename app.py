@@ -3,18 +3,20 @@ from flask_cors import CORS, cross_origin
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
 import requests
-import logging
+#import logging
 from pymongo.mongo_client import MongoClient
 
-logging.basicConfig(filename="scrapper.log", level=logging.INFO)
+#logging.basicConfig(filename="scrapper.log", level=logging.INFO)
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
+@cross_origin()
 def homepage():
     return render_template("index.html")
 
 @app.route("/review", methods=['POST', 'GET'])
+@cross_origin()
 def index():
     if request.method =='POST':
         try:
@@ -41,29 +43,33 @@ def index():
                 try:
                     name = commentbox.div.div.find_all('p', {'class': '_2sc7ZR _2V5EHH'})[0].text
                 except:
-                    logging.info("name")
+                    pass
+                    #logging.info("no name")
 
                 try:
                     rating = commentbox.div.div.div.div.text
                 except:
-                    rating = 'No Rating'
-                    logging.info(rating)
+                    pass
+                    #rating = 'No Rating'
+                    #logging.info(rating)
 
                 try:
                     commentHead = commentbox.div.div.div.p.text
                 except:
-                    commentHead = 'No Comment Heading'
-                    logging.info(commentHead)
+                    pass
+                    #commentHead = 'No Comment Heading'
+                    #logging.info(commentHead)
 
                 try:
                     custComment = commentbox.div.div.find_all('div', {'class': ''})[0].div.text
                 except Exception as e:
-                    logging.info(e)
+                    pass
+                    #logging.info(e)
 
                 mydict = {"Product": searchString, "Name": name, "Rating": rating, "CommentHead": commentHead,
                           "Comment": custComment}
                 reviews.append(mydict)
-            logging.info("log my final result {}".format(reviews))
+            #logging.info("log my final result {}".format(reviews))
             uri = "mongodb+srv://amaanrizvi39:Amaan369@cluster0.jwbt0oa.mongodb.net/?retryWrites=true&w=majority"
             # Create a new client and connect to the server
             client = MongoClient(uri)
@@ -72,10 +78,10 @@ def index():
             coll.insert_many(reviews)
             return render_template('result.html', reviews=reviews[0:(len(reviews)-1)])
         except Exception as e:
-            logging.info(e)
+            #logging.info(e)
             return 'something is wrong'
     else:
         return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run("0.0.0.0")
+    app.run(host='127.0.0.1', port=8000, debug=True)
