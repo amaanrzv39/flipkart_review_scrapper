@@ -8,14 +8,14 @@ from pymongo.mongo_client import MongoClient
 
 #logging.basicConfig(filename="scrapper.log", level=logging.INFO)
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route("/", methods=['GET'])
+@application.route("/", methods=['GET'])
 @cross_origin()
 def homepage():
     return render_template("index.html")
 
-@app.route("/review", methods=['POST', 'GET'])
+@application.route("/review", methods=['POST', 'GET'])
 @cross_origin()
 def index():
     if request.method =='POST':
@@ -84,4 +84,4 @@ def index():
         return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=8000, debug=True)
+    application.run(debug=True)
