@@ -1,0 +1,729 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 22:58:05] "[33mPOST /math HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 22:58:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 22:59:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 22:59:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 22:59:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:05:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:05:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:06:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:06:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:06:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:08:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:08:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:08:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:08:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:08:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'homepage' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:09:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'homepage' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:09:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'homepage' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:09:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2139, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'homepage' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:09:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:10:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:10:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:10:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:11:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:11:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:12:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:12:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "e:/Data-Science/Projects/web_scrapper/app.py", line 14, in homepage
+    return render_template("index.html")
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "e:\Data-Science\Projects\web_scrapper\templates\index.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Amaan\AppData\Local\Programs\Python\Python37\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:12:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:14:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:14:45] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:14:45] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:17:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:17:11] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:17:11] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:17:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:17:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:17:52] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:19:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:19:26] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:19:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:19:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:19:27] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:19:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:21:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:21:36] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:21:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:23:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:23:02] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:23:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:24:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:24:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:24:15] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:24:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:24:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:24:56] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:25:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:25:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:25:21] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:47:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:47:11] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:47:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:47:15] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:47:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:'bytes' object has no attribute 'text'
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:50:33] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:51:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:51:47] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:51:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:51:50] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:51:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:52:52] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:52:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:54:31] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:54:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:54:48] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:54:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:09] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:20] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:30] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:41] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:57:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:58:01] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:58:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:58:15] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:58:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:58:21] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Dec/2023 23:58:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:log my final result []
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:00:11] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:00:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:00:18] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:00:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:00:28] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:00:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.137:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:09:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:09:05] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:09:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:09:19] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:09:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:10:40] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:10:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:name
+INFO:root:No Rating
+INFO:root:No Comment Heading
+INFO:root:'NoneType' object has no attribute 'div'
+INFO:root:log my final result [{'Product': 'macbook13pro', 'Name': 'Vikas Suri', 'Rating': '5', 'CommentHead': 'Fabulous!', 'Comment': 'This 13-inch MacBook Pro is a great laptop, it has got amazing speed, good battery life and is lightweight. I am using it for more than a month now and below is my honest review.The features that I like in MBP 13:1.\tGreat battery life lasts around 9 hours with normal usage. 2.\tThe crisp and bright retina display with true tone, automatic brightness control and night shift. The display quality is amazing and best I’ve seen on any laptop.3.\tBlazing fast SSD, It has read speed of 2580 Mbps ...'}, {'Product': 'macbook13pro', 'Name': 'Mujahid Kareem', 'Rating': '5', 'CommentHead': 'Absolutely stunning.', 'Comment': "I've been using Macbook for almost about 8 years first with MacAir and then MacPro until I upgraded to this beast. There is simply a wow factor with this machine and there is no competition to Macs of course and this definitely is worth an upgrade from any previous Macbooks.Comes with inbuild Mojave OS and it is superb. Don't think twice if you're planning to pick this up."}, {'Product': 'macbook13pro', 'Name': 'Anil Bishnoi', 'Rating': '5', 'CommentHead': 'Terrific', 'Comment': 'Bought this with icici bank card, 1.35l for a touchbar and quadcore i5 is a great deal you can edit 8k videos flawlessly it is definitely quicker than my 2015 macbook pro i7'}, {'Product': 'macbook13pro', 'Name': 'BRAHMA Nanda Sha', 'Rating': '1', 'CommentHead': 'Worst experience ever!', 'Comment': 'Got laptop with damage battery, replacement happens 3times , still getting same issue, battery is not charging at all'}, {'Product': 'macbook13pro', 'Name': 'Flipkart Customer', 'Rating': '1', 'CommentHead': 'Worthless', 'Comment': 'Issue in battery charging. They replaced the product but same issue in replacement product itself.'}, {'Product': 'macbook13pro', 'Name': 'Gargi Biswas', 'Rating': '5', 'CommentHead': 'Mind-blowing purchase', 'Comment': 'excellent battery backup... works smoothly with multiple tabs open... hanging is not an issue here.. safari can be problematic with certificate configurations... chrome and firefox work perfectly fine without any certification issues.'}, {'Product': 'macbook13pro', 'Name': 'GoComet India  Pvt Ltd', 'Rating': '1', 'CommentHead': 'Not recommended at all', 'Comment': 'The laptop is showing so many issues. As soon as I started my laptop, it was showing as Battery issue and needs to be replaced. VERY POOR PRODUCT'}, {'Product': 'macbook13pro', 'Name': 'Indramani MISHRA', 'Rating': '3', 'CommentHead': 'Does the job', 'Comment': 'devery was not good.'}, {'Product': 'macbook13pro', 'Name': 'Sibasis Panigrahi', 'Rating': '4', 'CommentHead': 'Delightful', 'Comment': 'few scratches on the body.'}, {'Product': 'macbook13pro', 'Name': 'Vipendra Gupta', 'Rating': '5', 'CommentHead': 'Perfect product!', 'Comment': 'Apple is best'}, {'Product': 'macbook13pro', 'Name': 'Vipendra Gupta', 'Rating': 'No Rating', 'CommentHead': 'No Comment Heading', 'Comment': 'Apple is best'}]
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:12:15] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 00:12:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
