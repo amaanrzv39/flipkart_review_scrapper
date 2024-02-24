@@ -70,7 +70,7 @@ def index():
                           "Comment": custComment}
                 reviews.append(mydict)
             #logging.info("log my final result {}".format(reviews))
-            uri = "mongodb+srv://amaanrizvi39:Amaan369@cluster0.jwbt0oa.mongodb.net/?retryWrites=true&w=majority"
+            uri = "mongodb+srv://<user>:<password>@cluster0.jwbt0oa.mongodb.net/?retryWrites=true&w=majority"
             # Create a new client and connect to the server
             client = MongoClient(uri)
             db = client['Flipkart_Reviews_Scrapper']
